@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>Form_Validation</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section class="hero-section">
+
+        <div class="hero-text">
+            <h1>FORM VALIDATION</h1>
+        </div>
+        <div class="container">
+            
+            <form method="" action="" name="password_form" onsubmit="return validate()">
+                <h2 class="heading">Password Setup Form</h2>
+                <table>
+                    <tr>
+                        <td><label>FULL NAME : </label></td>
+                        <td><input type="text" name="full_name" onchange="return userValidation()" placeholder="Full Name"></td>
+                    </tr>
+
+                    <tr><td></td><td><span class="alert" id="Name"></span></td></tr>
+
+                    <tr>
+                        <td><label>EMAIL ID : </label></td>
+                        <td><input type="text" name="email_id" onchange="return userValidation1()" placeholder="Email ID"></td>
+                    </tr>
+
+                    <tr><td></td><td><span class="alert" id="Email"></span></td></tr>
+                    
+                    <tr>
+                        <td><label>PHONE NUMBER : </label></td>
+                        <td><input type="text" name="phone_number" onchange="return userValidation2()" placeholder="Phone Number"></td>
+                    </tr>
+                    
+                    <tr><td></td><td><span class="alert" id="Number"></span></td></tr>
+
+                    <tr>
+                        <td><label>PASSWORD : </label></td>
+                        <td><input type="text" name="password" onchange="return userValidation3()" placeholder="Password"></td>
+                    </tr>
+
+                    <tr><td></td><td><span class="alert" id="Password"></span></td></tr>
+
+                    <tr>
+                        <td><label>CONFIRM PASSWORD : </label></td>
+                        <td><input type="text" name="confirm_password" onchange="return userValidation4()" placeholder="Confirm Password"></td>
+                    </tr>
+
+                    <tr><td></td><td><span class="alert" id="ConfrimPassword"></span></td></tr>
+
+                    <tr>
+                        <td><input type="submit" name="submit" value="Submit">
+                        <input type="reset" name="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </form>     
+        </div>
+    </section>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
